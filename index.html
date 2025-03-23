@@ -2235,11 +2235,11 @@
           flex-direction: column;
       }
         .tabs-container {
-          background-color: #18191d;
+          background-color: #031730;
           display: flex;
           height: 30px;
           overflow-x: auto;
-          border-bottom: 1px solid #333;
+          border-bottom: 1px solid #011b3d;
           gap: 0;
             -ms-overflow-style: none; /* Hide scrollbar in IE */
             scrollbar-width: none; /* Hide scrollbar in Firefox */
@@ -2256,10 +2256,10 @@
             display: flex;
             align-items: center;
             padding: 0 5px;
-            background-color: #18191d;
-            color: #969696;
+            background-color: #10264f;
+            color: #8d8d8d;
             border-right: 1.5px solid #2e2d2d;
-	    border-left: 1.5px solid #2e2d2d;
+	    border-left: 1.5px solid #11274f;
             min-width: 85px;
             max-width: 85px;
             cursor: pointer;
@@ -2269,7 +2269,7 @@
 	    margin-left: 1px;
         }
       .tab.active {
-          background-color: #0F0F0F;
+          background-color: #163775;
           color: #ffffff;
 	  border-radius: 10px;
       }
@@ -2296,7 +2296,7 @@
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
       .tab-title.editing {
-          background: #3d3d3d;
+          background: #05304b;
           border: 1px solid #525252;
           padding: 2px 4px;
           border-radius: 3px;
@@ -2602,8 +2602,15 @@ function setupAutosave() {
 			monaco.editor.defineTheme('net-theme-dark', {
 				base: 'vs-dark',
 				inherit: true,
+        rules: [],
 				colors: {
-					"editor.background": '#18191d', //ur background color
+					"editor.background": '#031e45', //ur background color
+          'editor.lineHighlightBackground': '#06254d',
+
+          // Make active line numbers brighter
+        'editorLineNumber.foreground': '#7aa2f7', // Normal line numbers
+        'editorLineNumber.lineHighlightBackground': '#06254d',
+        'editorLineNumber.activeForeground': '#ffffff' // Brighter for active line
 				},
 				rules: [{
 						token: 'global',
