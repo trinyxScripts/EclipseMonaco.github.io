@@ -2235,11 +2235,11 @@
           flex-direction: column;
       }
         .tabs-container {
-          background-color: #031730;
+          background-color: #1a1a1a;
           display: flex;
           height: 30px;
           overflow-x: auto;
-          border-bottom: 1px solid #011b3d;
+          border-bottom: 1px solid #000000;
           gap: 0;
             -ms-overflow-style: none; /* Hide scrollbar in IE */
             scrollbar-width: none; /* Hide scrollbar in Firefox */
@@ -2256,10 +2256,10 @@
             display: flex;
             align-items: center;
             padding: 0 5px;
-            background-color: #10264f;
+            background-color: #2e2e2e;
             color: #8d8d8d;
             border-right: 1.5px solid #2e2d2d;
-	    border-left: 1.5px solid #11274f;
+	    border-left: 1.5px solid #000000;
             min-width: 85px;
             max-width: 85px;
             cursor: pointer;
@@ -2269,7 +2269,7 @@
 	    margin-left: 1px;
         }
       .tab.active {
-          background-color: #163775;
+          background-color: #4c4c4c;
           color: #ffffff;
 	  border-radius: 10px;
       }
@@ -2296,7 +2296,7 @@
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
       .tab-title.editing {
-          background: #05304b;
+          background: #616161;
           border: 1px solid #525252;
           padding: 2px 4px;
           border-radius: 3px;
@@ -2604,12 +2604,11 @@ function setupAutosave() {
 				inherit: true,
         rules: [],
 				colors: {
-						"editor.background": '#031e4580', //ur background color
-          'editor.lineHighlightBackground': '#06254d',
+					"editor.background": '#22222280', //ur background color
+          'editor.lineHighlightBackground': '#666666',
 
           // Make active line numbers brighter
-        'editorLineNumber.foreground': '#7aa2f7', // Normal line numbers
-        'editorLineNumber.lineHighlightBackground': '#06254d',
+        'editorLineNumber.foreground': '#444444', // Normal line numbers
         'editorLineNumber.activeForeground': '#ffffff' // Brighter for active line
 				},
 				rules: [{
